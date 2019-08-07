@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            position: relative;
+            /* perspective: 1000px; */
+            animation: top 3s infinite linear;
+            transform-style: preserve-3d;
+            animation-direction:alternate;
+        }
+
+        .top {
+            width: 300px;
+            height: 300px;
+            /* background: red; */
+            z-index: 1;
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            transform: rotateX(90deg) translateZ(150px);  
+        }
+        ul {
+            width:100%;
+            height:100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        ul li {
+            list-style: none;
+            width:32%;
+            height:32%;
+            text-align: center;
+            line-height:100px;
+            border-radius: 12px;
+            color:ivory;
+            font-weight: 700;
+            font-size:20px;
+        }
+        .k1 {
+            background:rgb(238, 88, 42);
+        }
+        .k2 {
+            background:rgb(19, 147, 233);
+        }
+        .k3 {
+            background:rgb(243, 42, 142);
+        }
+        .k4 {
+            background:rgb(241, 153, 20);
+        }
+        .k5 {
+            background:rgb(12, 219, 29);
+        }
+        .k6 {
+            background:rgb(255, 225, 205);
+        }
+
+        .bottom {
+            width: 300px;
+            height: 300px;
+            /* background: rgb(205, 235, 255); */
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            transform: rotateX(90deg) translateZ(-150px); 
+        }
+
+        .left {
+            width: 300px;
+            height: 300px;
+            /* background: rgb(255, 205, 230); */
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            transform: rotateY(90deg) translateZ(-150px);
+        }
+
+        .right {
+            width: 300px;
+            height: 300px;
+            /* background: rgb(218, 134, 8); */
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .before {
+            width: 300px;
+            height: 300px;
+            /* background: rgb(12, 219, 29); */
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            transform: translateZ(-150px);
+        }
+
+        .after {
+            width: 300px;
+            height: 300px;
+            /* background: rgb(255, 225, 205); */
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            transform: translateZ(150px);
+        }
+
+        @keyframes top {
+            from {
+                transform:  rotateY(0deg) rotateX(60deg) rotateZ(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg) rotateX(0deg) rotateZ(45deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <ul>
+                <li class="k1">1</li>
+                <li class="k1">2</li>
+                <li class="k1">3</li>
+                <li class="k1">4</li>
+                <li class="k1">5</li>
+                <li class="k1">6</li>
+                <li class="k1">7</li>
+                <li class="k1">8</li>
+                <li class="k1">9</li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li class="k2">1</li>
+                <li class="k2">2</li>
+                <li class="k2">3</li>
+                <li class="k2">4</li>
+                <li class="k2">5</li>
+                <li class="k2">6</li>
+                <li class="k2">7</li>
+                <li class="k2">8</li>
+                <li class="k2">9</li>
+            </ul>
+        </div>
+        <div class="left">
+            <ul>
+                <li class="k3">1</li>
+                <li class="k3">2</li>
+                <li class="k3">3</li>
+                <li class="k3">4</li>
+                <li class="k3">5</li>
+                <li class="k3">6</li>
+                <li class="k3">7</li>
+                <li class="k3">8</li>
+                <li class="k3">9</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="k4">1</li>
+                <li class="k4">2</li>
+                <li class="k4">3</li>
+                <li class="k4">4</li>
+                <li class="k4">5</li>
+                <li class="k4">6</li>
+                <li class="k4">7</li>
+                <li class="k4">8</li>
+                <li class="k4">9</li>
+            </ul>
+        </div>
+        <div class="before">
+            <ul>
+                <li class="k5">1</li>
+                <li class="k5">2</li>
+                <li class="k5">3</li>
+                <li class="k5">4</li>
+                <li class="k5">5</li>
+                <li class="k5">6</li>
+                <li class="k5">7</li>
+                <li class="k5">8</li>
+                <li class="k5">9</li>
+            </ul>
+        </div>
+        <div class="after">
+            <ul>
+                <li class="k6">1</li>
+                <li class="k6">2</li>
+                <li class="k6">3</li>
+                <li class="k6">4</li>
+                <li class="k6">5</li>
+                <li class="k6">6</li>
+                <li class="k6">7</li>
+                <li class="k6">8</li>
+                <li class="k6">9</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
