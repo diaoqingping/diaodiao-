@@ -1,0 +1,52 @@
+.viewport {
+  width: 100%;
+}
+.viewport .header {
+  width: 100%;
+}
+.viewport .header img {
+  width: 100%;
+}
+.viewport .content {
+  width: 100%;
+}
+.viewport .content .cheap {
+  width: 100%;
+  padding: 0.875rem 0.78125rem;
+  box-sizing: border-box;
+}
+.viewport .content .cheap .top a:first-child {
+  color: black;
+  font-size: 0.78125rem;
+}
+.viewport .content .cheap .top a:last-child {
+  color: #666;
+  font-size: 0.78125rem;
+}
+.viewport .content .bottom {
+  height: 6.75rem;
+  background: #ddd;
+  border: 0.03125rem dashed #ccc;
+  margin-top: 0.875rem;
+  text-align: center;
+}
+.viewport .content .bottom .icon-add {
+  display: block;
+  font-size: 3.3125rem;
+  color: #999;
+  margin-top: 1rem;
+}
+.viewport .content .bottom .icon-add .youhui {
+  font-size: 0.625rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+.viewport .footer {
+  padding: 0.875rem 0.78125rem;
+  font-size: 0.625rem;
+  color: #666;
+  margin-bottom: 3.90625rem;
+}
+.viewport .footer p {
+  line-height: 30px;
+}
