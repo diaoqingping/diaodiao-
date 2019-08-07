@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大风车</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .ye {
+            width: 250px;
+            height: 250px;
+            position:absolute;
+            top:20px;
+            left:50%;
+            margin-left:-125px;
+            animation: rotate 4s linear infinite;
+            transform-origin:125px 170px;
+            z-index: 1;
+        }
+        .gun {
+            width: 15px;
+            height: 300px;
+            background:black;
+            position: absolute;
+            bottom:20px;
+            left:50%;
+            margin-left:-7.5px;
+        }
+        .ye1 {
+            width: 60px;
+            height: 120px;
+            background:hsl(90, 100%, 50%);
+            position: absolute;
+            top:50px;
+            left:65px;
+            border-radius: 60px 0px 0px 60px;
+        }
+        .ye2 {
+            width: 60px;
+            height: 120px;
+            background:rgb(0, 119, 255,0.336);
+            position: absolute;
+            top:170px;
+            left:125px;
+            border-radius: 0px 60px 60px 0px;
+        }
+        .ye3 {
+            width: 120px;
+            height: 60px;
+            background:rgb(255, 0, 34,0.336);
+            position: absolute;
+            top:110px;
+            left:125px;
+            border-radius: 60px 60px 0px 0px;
+        }
+        .ye4 {
+            width: 120px;
+            height: 60px;
+            background:rgba(174, 0, 255, 0.336);
+            position: absolute;
+            top:170px;
+            left:7px;
+            border-radius:  0px 0px 60px 60px;
+        }
+        @keyframes rotate {
+            from {
+                
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ye">
+            <div class="ye1"></div>
+            <div class="ye2"></div>
+            <div class="ye3"></div>
+            <div class="ye4"></div>
+        </div>
+
+        <div class="gun"></div>
+    </div>
+</body>
+
+</html>
