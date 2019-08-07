@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg {
+            width: 100%;
+            height: 648px;
+            background: skyblue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bo1 {
+            width: 100%;
+            height: 211px;
+            position: absolute;
+            bottom: -60px;
+            animation: water 1s linear infinite;
+            animation-direction: alternate;
+        }
+
+        .bo2 {
+            width: 100%;
+            height: 211px;
+            position: absolute;
+            bottom: -60px;
+            animation: water 1.2s linear infinite;
+            animation-direction: alternate;
+        }
+        .dsun {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background:rgba(255, 255, 255, .5);
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            animation: asun 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        .sun {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .9);
+            position: absolute;
+            left:50%;
+            top: 50%;
+            margin-left:-20px;
+            margin-top:-20px;
+            animation: sun 1.5s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes sun {
+            from {
+                transform: scale(1);
+                box-shadow: 0px 0px 5 10 rgba(255, 255, 255, .9);
+                box-shadow: none;
+            }
+            to {
+                transform: scale(1.2);
+                box-shadow: 0px 0px 5 10 rgba(255, 255, 255, .6);
+                box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, .5);
+            }
+        }
+        @keyframes asun {
+            from {
+                transform: scale(1);
+                box-shadow: 0px 0px 5 10 rgba(255, 255, 255, .5);
+                box-shadow: none;
+            }
+            to {
+                transform: scale(1.5);
+                box-shadow: 0px 0px 5 10 rgba(255, 255, 255, .2);
+                box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, .5);
+            }
+        }
+        @keyframes water {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-40px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="dsun">
+            <div class="sun">
+
+            </div>
+        </div>
+        <div class="bo1">
+            <img src="1.png" width="100%" height="100%">
+        </div>
+        <div class="bo2">
+            <img src="2.png" width="100%" height="100%">
+        </div>
+    </div>
+</body>
+
+</html>
