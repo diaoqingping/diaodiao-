@@ -1,0 +1,36 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd {
+    margin:0;
+    padding:0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input,img {
+    margin:0;
+    padding:0;
+    outline: none;
+    border:none;
+    vertical-align: middle;
+}
+// 浮动
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+// 清除浮动
+.clearfix::after {
+    content:"";
+    height:0;
+    line-height:0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}

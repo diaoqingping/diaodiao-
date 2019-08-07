@@ -1,0 +1,108 @@
+// 声明一个变量用来规定稿件图分多少份
+@number: 20;
+// 声明一个变量用来规定稿件图中的每一份的大小
+@persize: 640px / @number;
+
+
+.viewport {
+    width: 100%;
+
+    .header {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .box {
+        width: 100%;
+        background: #f4f3f2;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .one {
+                flex: 1;
+                height:104rem/@persize;
+                border-top:1rem/@persize solid #ccc;
+                border-bottom:1rem/@persize solid #ccc;
+                background:#fff;
+                margin-top:32rem/@persize;
+                padding:25rem/@persize;
+                box-sizing: border-box;
+                
+            }
+            .k {
+                color:#999;
+            }
+
+            .two {
+                flex: 1;
+                height:104rem/@persize;
+                border-bottom:1rem/@persize solid #ccc;
+                background:#fff;
+                padding:25rem/@persize;
+                box-sizing: border-box;
+               .money {
+                   color:#ccc;
+                   font-size:20px;
+               }
+            }
+
+            .three {
+                flex: 1;
+                height:104rem/@persize;
+                border-bottom:1rem/@persize solid #ccc;
+                background:#fff;
+                padding:25rem/@persize;
+                box-sizing: border-box;
+                .kk {
+                    color:#ccc;
+                    font-size:25rem/@persize;
+                    margin-top:5rem/@persize;
+                }
+            }
+
+            .four {
+                flex: 1;
+                height:104rem/@persize;
+                border-bottom:1rem/@persize solid #ccc;
+                background:#fff;
+                padding:25rem/@persize;
+                box-sizing: border-box;
+                
+            }
+
+
+
+        }
+
+        .bonnt {
+            padding:50rem/@persize 50rem/@persize 100rem/@persize;
+            box-sizing: border-box;
+            background:#f7f4f1;
+            .click {
+                width: 100%;
+                height:80rem/@persize;
+                background:#ff9b25;
+                border-radius: 12rem/@persize;
+                font-size:20px;
+                color:#fff;
+            }
+        }
+
+        .footer {
+            padding:28rem/@persize 25rem/@persize;
+            font-size:20rem/@persize;
+            color:#666;
+            padding-bottom:125rem/@persize;
+            box-sizing: border-box;
+            p {
+                line-height: 30px;
+            }
+        }
+
+    }
+}
