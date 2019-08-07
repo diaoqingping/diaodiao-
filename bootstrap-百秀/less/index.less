@@ -1,0 +1,132 @@
+.left {
+    padding: 0;
+
+    .logo a {
+        display: block;
+        width: 100%;
+        background: blue;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .logo_nav {
+        ul {
+            background: #ccc;
+
+            li {
+                height: 50px;
+                line-height: 50px;
+                padding-left: 20px;
+
+                &:hover {
+                    background: orange;
+                }
+            }
+        }
+    }
+
+
+}
+
+.middle {
+    .top {
+        border-bottom: 1px solid #ccc;
+
+        a {
+            display: block;
+            width: 25%;
+            height: 128px;
+            float: left;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .ali {
+                display: block;
+                width: 100%;
+                height: 40px;
+                background: rgba(0, 0, 0, .6);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 10px;
+                color: white;
+            }
+        }
+
+        a:nth-child(n+2) {
+            border-left: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+        }
+
+        a:first-child {
+            display: block;
+            width: 50%;
+            height: 256px;
+            float: left;
+            border-bottom: 10px solid #fff;
+        }
+
+    }
+
+    .content {
+        border-bottom: 1px solid #ccc;
+        padding: 0;
+
+        .content_left {
+            padding: 0;
+            font-size:12px;
+        }
+
+        .content_right {
+            padding:0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+
+    }
+}
+
+.right {
+    a {
+        display: block;
+        width:100%;
+        img {
+            width:100%;
+            height:100%;
+        }
+    }
+    .box {
+        border:1px solid #ccc;
+        padding:8px;
+        margin-top:15px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .left {
+        .logo_nav {
+            ul {
+                overflow: hidden;
+                background:#ccc;
+                li {
+                    float: left;
+                    padding:0;
+                    width:20%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
