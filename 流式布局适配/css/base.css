@@ -1,0 +1,59 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+input,img {
+    padding:0;
+    outline:none;
+    border:none;
+    vertical-align: middle;
+}
+
+.font10 {
+    font-size:10px;
+}
+.font12 {
+    font-size: 12px;
+}
+.font14 {
+    font-size:14px;
+}
+/* 清除浮动 */
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+    line-height:0;
+    height:0;
+    visibility:hidden;
+}
+.clearfix {
+    zoom:1;
+}
+/* 浮动 */
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+/* 版心 */
+.w {
+    width: 1189px;
+    margin:0 auto;
+}
+.font {
+    font-family:"微软雅黑";
+    font-size:14px;
+    color:#5E5E5C;
+    line-height:30px;
+ }
+ a {
+     text-decoration: none;
+     font-size:14px;
+     color:#5E5E5C;
+     font-family:"微软雅黑";
+ }
+ 
+
